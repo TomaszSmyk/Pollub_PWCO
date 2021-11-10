@@ -7,6 +7,7 @@ RUN apt-get update \
     && apt install curl -y \
     && apt-get clean
 COPY ./program.sh .
+RUN chmod +x program.sh
 RUN ./program.sh
 CMD ["echo", "ServerName localhost", ">>", "/etc/apache2/apache2.conf"]
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
