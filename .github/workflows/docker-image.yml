@@ -23,4 +23,4 @@ jobs:
     - name: build
       run: docker build . --file Dockerfile --tag sprawozdanie:$(date +%s)
     - name: push
-      run: docker push ${{secrets.DOCKER_LOGIN}}/pollub-pwco:$(date +%s)
+      run: docker push ${{secrets.DOCKER_LOGIN}}/pollub-pwco:latest
