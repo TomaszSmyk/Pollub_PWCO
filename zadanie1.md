@@ -16,4 +16,5 @@ używam tam ubuntu, instaluję: apache2, curl i jq, kopiuję program.sh a nastę
 # 4.
 Dodałem workflow do githuba, zdefiniowałem secrety i teraz za każdym razem jak spushuję na remote to obraz się zbuduje do repo DockerHub
 ![obraz](https://user-images.githubusercontent.com/53970326/141201195-445f6e7d-bb99-469c-96f0-6602169e7651.png)
+![obraz](https://user-images.githubusercontent.com/53970326/141201284-e1f9f2e0-83af-4af4-ae82-8f1598209c3f.png)
 
