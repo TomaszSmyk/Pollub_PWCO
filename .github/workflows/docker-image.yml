@@ -21,6 +21,6 @@ jobs:
       run: 
         docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
     - name: build
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag sprawozdanie:$(date +%s)
     - name: push
-      run: docker push ${{secrets.DOCKER_LOGIN}}/pollub-pwco
+      run: docker push ${{secrets.DOCKER_LOGIN}}/pollub-pwco:$(date +%s)
