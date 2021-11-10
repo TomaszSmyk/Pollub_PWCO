@@ -12,3 +12,6 @@ używam tam ubuntu, instaluję: apache2, curl i jq, kopiuję program.sh a nastę
      cat log.txt
      
   d) docker hstory sprawozdanie
+  
+# 4.
+Dodałem workflow do githuba, zdefiniowałem secrety i teraz za każdym razem jak spushuję na remote to obraz się zbuduje do repo DockerHub
