@@ -37,7 +37,10 @@ używam tam ubuntu, instaluję: apache2, curl i jq, kopiuję program.sh a nastę
   
   ![obraz](https://user-images.githubusercontent.com/53970326/141272191-ddfacc55-b30b-4bc9-af97-5f9633f940ab.png)
 
-  Lub też można użyć polecenia docker image inspect 
+  Lub też można użyć polecenia docker image inspect sprawozdanie | jq -r '.[].RootFS'
+  
+  ![obraz](https://user-images.githubusercontent.com/53970326/141272806-e2219673-c57c-4fd6-b18f-9c2443700bf6.png)
+
   
 # 4.
 Dodałem workflow do githuba, zdefiniowałem secrety i teraz za każdym razem jak spushuję na remote to obraz się zbuduje do repo DockerHub
