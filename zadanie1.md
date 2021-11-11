@@ -92,6 +92,8 @@ Tutaj lepie widać (github zjada slashe na końcu linijek, można wejść w 'Raw
 > -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
 > registry:2
 `
+Pierwsze 4 linijki nie zmieniają się, konfiguracja sprwadza się do ustawienia mechanizmu kontroli dostępu na htpasswd, oraz podanie ścieżki do pliku z danymi logowania oraz określeniu, że to z tego pliku ma brać te dane.
+
 
 4. Teraz aby zrobić pulla z mojego prywatnego rejestru musze się zalogować `docker login localhost:6677` i podać swoje dane:
 
