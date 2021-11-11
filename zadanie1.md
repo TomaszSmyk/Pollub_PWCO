@@ -51,6 +51,16 @@ Dodałem workflow do githuba, zdefiniowałem secrety i teraz za każdym razem ja
 # ZADANIA DODATKOWE
 
 # 1.
+a) docker run -d -p 6677:5000 --restart always --name registry registry:2
+
+![obraz](https://user-images.githubusercontent.com/53970326/141273899-b1d60601-7dde-4bb3-86e8-73141178925a.png)
+
+b) 
+docker pull ubuntu
+docker tag ubuntu localhost:6677/mojeubuntu
+docker push localhost:6677/mojeubuntu
+
+![obraz](https://user-images.githubusercontent.com/53970326/141274172-ce522c4e-7349-4ec7-80cb-2cf1e24f5995.png)
 
 
 # 2.
