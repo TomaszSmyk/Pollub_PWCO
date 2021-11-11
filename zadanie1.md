@@ -96,3 +96,6 @@ Tutaj lepie widać:
 > registry:2
 `
 
+4. Teraz aby zrobić pulla z mojego prywatnego rejestru musze się zalogować `docker login localhost:6677` i podać swoje dane:
+
+`docker login localhost:6677 -u login -p pass`
