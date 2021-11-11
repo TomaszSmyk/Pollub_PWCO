@@ -76,12 +76,12 @@ b)
 ![obraz](https://user-images.githubusercontent.com/53970326/141275962-0f9a29c3-e662-4442-b681-b2292f1216e0.png)
 
 
-3. Uruchamiam rejest z konfiguracją:
+3. Uruchamiam rejestr z konfiguracją:
 
 ![obraz](https://user-images.githubusercontent.com/53970326/141277024-5483f3a8-fbe3-47a4-b90e-1a8cb7059c05.png)
 
-Tutaj lepie widać (github zjada slashe na końcu linijek, można wejść w 'Raw' na górze i będzie widać te slashe):
-`
+Tutaj lepiej widać (github zjada slashe na końcu linijek, można wejść w 'Raw' na górze i będzie widać te slashe):
+
 > docker run -d \
 > -p 6677:5000 \
 > --restart=always \
@@ -91,7 +91,6 @@ Tutaj lepie widać (github zjada slashe na końcu linijek, można wejść w 'Raw
 > -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
 > -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
 > registry:2
-`
 
 
 Pierwsze 4 linijki nie zmieniają się, konfiguracja sprwadza się do ustawienia mechanizmu kontroli dostępu na htpasswd, oraz podanie ścieżki do pliku z danymi logowania oraz określeniu, że to z tego pliku ma brać te dane.
