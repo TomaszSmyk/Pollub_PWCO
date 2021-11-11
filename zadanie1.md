@@ -85,17 +85,17 @@ Tutaj lepie widać:
 > docker run -d \
 > -p 6677:5000 \
 > --restart=always \
-> --name registryauth \
+> --name registry1 \
 > -v "$(pwd)"/auth:/auth \
 > -e "REGISTRY_AUTH=htpasswd" \
 > -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
 > -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
-> -v "$(pwd)"/certs:/certs \
-> -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \
-> -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \
 > registry:2
 `
 
 4. Teraz aby zrobić pulla z mojego prywatnego rejestru musze się zalogować `docker login localhost:6677` i podać swoje dane:
 
 `docker login localhost:6677 -u login -p pass`
+
+![obraz](https://user-images.githubusercontent.com/53970326/141363153-392712bb-3ee2-41b9-b4ae-2e8df232cf67.png)
+
