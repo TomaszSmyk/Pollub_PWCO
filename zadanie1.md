@@ -20,7 +20,7 @@ Wynik działania programu w przeglądarce:
 Dockerfile też jest w repo, ma nazwę Dockerfile
 używam tam ubuntu, instaluję: apache2, curl i jq, kopiuję program.sh a następnie go uruchamiam. Dodatkowo wykonuję konfigurację, niezbędną do działania apache.
 # 3.
-  a) docker build -t sprawozdanie .
+  a) docker build -t sprawozdanie .  (tutaj akurat jest z cache, ale nie dużo miejsca cały log zajmuje jakby zbudować od nowa, a robi się to flagą --no-cache)
   
   ![obraz](https://user-images.githubusercontent.com/53970326/141271209-bdd855a6-1de5-4447-b4fc-6c038bf7c478.png)
 
