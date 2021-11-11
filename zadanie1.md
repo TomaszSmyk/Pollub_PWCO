@@ -31,10 +31,13 @@ używam tam ubuntu, instaluję: apache2, curl i jq, kopiuję program.sh a nastę
   c) docker run -it sprawozdanie sh
      cat log.txt
      
-     ![obraz](https://user-images.githubusercontent.com/53970326/141271911-c2c85522-fbd8-49bd-8244-51ce34f4139f.png)
-
+   ![obraz](https://user-images.githubusercontent.com/53970326/141272062-893896c6-f395-4f08-8545-58ce75c2839b.png)
      
   d) docker hstory sprawozdanie
+  
+  ![obraz](https://user-images.githubusercontent.com/53970326/141272191-ddfacc55-b30b-4bc9-af97-5f9633f940ab.png)
+
+  Lub też można użyć polecenia docker image inspect 
   
 # 4.
 Dodałem workflow do githuba, zdefiniowałem secrety i teraz za każdym razem jak spushuję na remote to obraz się zbuduje do repo DockerHub
