@@ -81,7 +81,8 @@ b)
 ![obraz](https://user-images.githubusercontent.com/53970326/141277024-5483f3a8-fbe3-47a4-b90e-1a8cb7059c05.png)
 
 Tutaj lepie widać:
-`docker run -d \
+`
+> docker run -d \
 > -p 6677:5000 \
 > --restart=always \
 > --name registryauth \
