@@ -1,5 +1,20 @@
 # 1.
 program jest w repozytorium, ma nazwę program.sh, do jego użycia instaluję: apache2, curl i jq
+
+Działanie programu:
+
+1. Tworzę plik log.txt, do którego wrzucam wymagane logi
+2. Przechodzę do /var/www/html/, jest to folder apache, w którym znajduje się plik index.html
+3. usuwam index.html i tworzę plik o takiej samej nazwie
+4. poleceniami `echo` wrdzucam do pliku index.html niezbędene informacje z zadanie. 
+5. Do adresu ip używam API (ipinfo.io), atomiast do daty używam konstruktora klasy Date (JavaScript)
+6. Odpalam program poleceniem `./program.sh` (do działania programu może być niezbędne nadanie uprawnień plikowi program.sh: `chmod +x program.sh`)
+
+Wynik działania programu w przeglądarce:
+![obraz](https://user-images.githubusercontent.com/53970326/141271011-66c73195-6b96-4b25-a647-80785a9dfbb3.png)
+
+
+Działanie programu jest następujące: 
 # 2. 
 Dockerfile też jest w repo, ma nazwę Dockerfile
 używam tam ubuntu, instaluję: apache2, curl i jq, kopiuję program.sh a następnie go uruchamiam. Dodatkowo wykonuję konfigurację, niezbędną do działania apache
