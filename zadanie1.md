@@ -11,20 +11,28 @@ Działanie programu:
 6. Odpalam program poleceniem `./program.sh` (do działania programu może być niezbędne nadanie uprawnień plikowi program.sh: `chmod +x program.sh`)
 
 Wynik działania programu w przeglądarce:
+
+
 ![obraz](https://user-images.githubusercontent.com/53970326/141271011-66c73195-6b96-4b25-a647-80785a9dfbb3.png)
 
 
-Działanie programu jest następujące: 
 # 2. 
 Dockerfile też jest w repo, ma nazwę Dockerfile
-używam tam ubuntu, instaluję: apache2, curl i jq, kopiuję program.sh a następnie go uruchamiam. Dodatkowo wykonuję konfigurację, niezbędną do działania apache
+używam tam ubuntu, instaluję: apache2, curl i jq, kopiuję program.sh a następnie go uruchamiam. Dodatkowo wykonuję konfigurację, niezbędną do działania apache.
 # 3.
   a) docker build -t sprawozdanie .
   
+  ![obraz](https://user-images.githubusercontent.com/53970326/141271209-bdd855a6-1de5-4447-b4fc-6c038bf7c478.png)
+
   b) docker run -d sprawozdanie
   
+  ![obraz](https://user-images.githubusercontent.com/53970326/141271397-bd9492e0-4b85-49de-9a6c-43e3f3dcdb38.png)
+
   c) docker run -it sprawozdanie sh
      cat log.txt
+     
+     ![obraz](https://user-images.githubusercontent.com/53970326/141271911-c2c85522-fbd8-49bd-8244-51ce34f4139f.png)
+
      
   d) docker hstory sprawozdanie
   
