@@ -76,4 +76,22 @@ b)
 ![obraz](https://user-images.githubusercontent.com/53970326/141275962-0f9a29c3-e662-4442-b681-b2292f1216e0.png)
 
 
-3. 
+3. Uruchamiam rejest z konfiguracją:
+
+![obraz](https://user-images.githubusercontent.com/53970326/141277024-5483f3a8-fbe3-47a4-b90e-1a8cb7059c05.png)
+
+Tutaj lepie widać:
+`docker run -d \
+> -p 6677:5000 \
+> --restart=always \
+> --name registryauth \
+> -v "$(pwd)"/auth:/auth \
+> -e "REGISTRY_AUTH=htpasswd" \
+> -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
+> -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
+> -v "$(pwd)"/certs:/certs \
+> -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \
+> -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \
+> registry:2
+`
+
