@@ -47,6 +47,15 @@ Dodałem workflow do githuba, zdefiniowałem secrety i teraz za każdym razem ja
 ![obraz](https://user-images.githubusercontent.com/53970326/141201195-445f6e7d-bb99-469c-96f0-6602169e7651.png)
 ![obraz](https://user-images.githubusercontent.com/53970326/141201284-e1f9f2e0-83af-4af4-ae82-8f1598209c3f.png)
 
+workflow można znaleźć tutaj:  Pollub_PWCO/.github/workflows/docker-image.yml 
+
+Ważne jest, żeby zdefiniować w krokach logowanie za pomocą secretów(linijka 22). Tutaj akurat wszystko mi się buduje w wersji latest.
+
+Link do DockerHub: https://hub.docker.com/repository/docker/tomaszsmyk/pollub-pwco
+
+![obraz](https://user-images.githubusercontent.com/53970326/141490700-a0055739-9851-4d29-8571-b3f4e604e922.png)
+
+
 
 # ZADANIA DODATKOWE
 
